@@ -1,0 +1,245 @@
+/* Variables */
+:root{
+    --dark-color: #212529;
+    --brand-color: rgb(78, 87, 212);
+    --brand-color-light: rgb(109, 118, 252);
+    --light-color: #727272;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --border-radius: 30px;
+}
+
+/* Resets */
+body{
+    color: var(--dark-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--brand-color);
+}
+
+a:hover{
+    color: var(--brand-color-light);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.btn-brand{
+    background-color: var(--brand-color);
+    color: white;
+}
+
+.btn-brand:hover{
+    background-color: var(--brand-color-light) !important;
+    color: white !important;
+}
+
+.line{
+    background-color: var(--brand-color);
+    width: 40px;
+    height: 4px;
+}
+
+/* Navbar */
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+
+
+
+.nav-link{
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: var(--brand-color);
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--brand-color);
+}
+
+/* Home */
+.social-icons a{
+    color: var(--dark-color);
+    font-size: 30px;
+}
+
+.social-icons a:hover{
+    color: var(--brand-color);
+}
+
+.home-image-box img{
+    border-radius: var(--border-radius);
+}
+
+/* Skills */
+.myskills{
+    display: flex;
+}
+
+.skill-title span{
+    float: right;
+}
+
+.progress-bar{
+    background-color: gray;
+    width: 280px;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress-bar div{
+    width: 0%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.percentage{
+    text-align: right;
+}
+
+.html{
+    background-color: rgb(215, 75, 36);
+    animation: html 1s linear forwards;
+}
+
+.css{
+    background-color: rgb(36, 73, 216);
+    animation: css 1.5s linear forwards;
+}
+
+.boot{
+    background-color: rgb(108, 16, 233);
+    animation: boot 2s linear forwards;
+}
+
+.java{
+    background-color: rgb(238, 203, 1);
+    animation: java 3s linear forwards;
+}
+
+@keyframes html{
+    100%{
+        width: 91%;
+    }
+}
+
+@keyframes css{
+    100%{
+        width: 87%;
+    }
+}
+
+@keyframes boot{
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes java{
+    100%{
+        width: 48%;
+    }
+}
+
+/* Portforlio */
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.project .overlay a{
+    font-weight: 700;
+}
+
+.project img {
+    transition: all 0.4s ease;   
+}
+
+.project:hover .overlay{
+    opacity: 1;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+/* Services */
+.services-box{
+    background: url(../images/background.jpg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Contact */
+.form-control:focus{
+    box-shadow: none;
+    border: rgb(206, 212, 218) 2px solid;
+}
+
+/* Footer */
+.footer-nav{
+    list-style: none;
+}
+
+.footer-nav a{
+    margin-top: 10px;
+    color: white;
+}
+
+.footer-nav li{
+    margin-top: 8px;
+}
+
+.footer-nav a:hover{
+    color: var(--brand-color);
+}
+
+.social-icons-footer a{
+    color: white;
+    font-size: 30px;
+}
+
+.social-icons-footer a:hover{
+    color: var(--brand-color);
+    font-size: 30px;
+}
+
+.footer-top{
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+}
+
+.footer-bottom{
+    padding-top: 20px;
+}
